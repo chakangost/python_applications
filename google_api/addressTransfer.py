@@ -9,10 +9,9 @@ location = ['부산광역시 연제구 거제천로 190', '부산 진구 부전1
 index = 0
 
 for key in location:
-
-    #GoogleApiKey를 아래 URL에 넣어주어야 한다.
+    # GoogleApiKey를 아래 URL에 넣어주어야 한다.
     URL = 'https://maps.googleapis.com/maps/api/geocode/json?key=GoogleApiKey' \
-    '&sensor=false&language=ko&address={}'.format(key)
+          '&sensor=false&language=ko&address={}'.format(key)
 
     # URL로 보낸 Requst의 Response를 response 변수에 할당
     response = requests.get(URL)
